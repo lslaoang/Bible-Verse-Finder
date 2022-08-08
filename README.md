@@ -1,2 +1,2 @@
 # Verse Finder
-Bible verse finder and display
+Application Platform Interface providing Bible verses.
