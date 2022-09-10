@@ -4,6 +4,44 @@ info:
   description: Title
   version: 1.0.0
 servers:
-  - url: 'https'
+  - url:  https://bibilio-finder.com
+
 paths:
+  /finder/verse:
+    get:
+      summary: "Get specific verse from the repository."
+      operationId: "getVerse"
+
+      responses:
+        200:
+          $ref: '#/components/responses/Success'
+
+components:
+#  securitySchemes:
+#    bearerAuth:
+#      type: http
+#      scheme: bearer
+#      bearerFormat: JWT
+
+  responses:
+    Success:
+      description: "Fetched successfully."
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Verse'
+
+  schemas:
+    Verse:
+      description: "Specific verse from the repository."
+      type: object
+      properties:
+        verseNumber:
+          type: string
+          example: 3.5
+        verseMessage:
+          type: string
+          example: thisMessage
+
+
   
