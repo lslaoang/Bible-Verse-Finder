@@ -7,7 +7,7 @@ import org.springframework.stereotype.Controller;
 
 @Controller
 public class FinderController implements FinderApi {
-    
+
     @Override
     public ResponseEntity<Verse> getVerse() {
         return null;

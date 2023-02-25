@@ -1,0 +1,6 @@
+#Configuration
+
+getBible:
+  url:
+    v1: https://getbible.net/v1
+    v2: https://getbible.net/v2
