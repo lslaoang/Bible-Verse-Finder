@@ -57,7 +57,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-<!--CodeGen dependencies-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webflux</artifactId>
+            <version>5.3.18</version>
+        </dependency>
+        <!--CodeGen dependencies-->
     </dependencies>
 
     <build>
